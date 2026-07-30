@@ -45,7 +45,7 @@ export default function About() {
 
       <div className="wrap" style={{ position: 'relative', zIndex: 1 }}>
         <motion.div variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'}
-          style={{ display: 'flex', flexWrap: 'wrap', gap: '6rem', alignItems: 'flex-start' }}>
+          style={{ display: 'flex', flexWrap: 'wrap', gap: 'clamp(2.5rem, 8vw, 6rem)', alignItems: 'flex-start' }}>
           
           {/* Left Column: Main Content */}
           <div style={{ flex: '1 1 min(100%, 500px)', maxWidth: 800 }}>

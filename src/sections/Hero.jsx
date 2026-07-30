@@ -228,7 +228,7 @@ export default function Hero() {
         background: 'rgba(7,6,10,0.85)',
         backdropFilter: 'blur(16px)',
         padding: '1.25rem 0',
-        marginTop: '3rem',
+        marginTop: 'clamp(1.5rem, 5vw, 3rem)',
         position: 'relative', zIndex: 3,
       }}>
         <div className="wrap">

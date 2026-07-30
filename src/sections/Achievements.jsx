@@ -29,7 +29,7 @@ export default function Achievements() {
   return (
     <section id="achievements" ref={ref} className="section-padding">
       <div className="wrap">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.55 }} style={{ marginBottom: '4rem' }}>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.55 }} style={{ marginBottom: 'clamp(2rem, 5vw, 4rem)' }}>
           <p className="sec-num">06 — ACHIEVEMENTS</p>
           <h2 className="font-display" style={{ fontSize: 'clamp(2rem,5vw,3rem)', fontWeight: 700, letterSpacing: '-0.035em', color: '#EEEEF2', lineHeight: 1.18 }}>
             Recognition &{' '}

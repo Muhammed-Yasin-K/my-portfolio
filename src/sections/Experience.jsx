@@ -9,7 +9,7 @@ export default function Experience() {
   return (
     <section id="experience" ref={ref} className="section-padding">
       <div className="wrap">
-        <motion.div initial={{ opacity:0, y:20 }} animate={inView?{opacity:1,y:0}:{}} transition={{ duration:0.55 }} style={{ marginBottom:'3rem' }}>
+        <motion.div initial={{ opacity:0, y:20 }} animate={inView?{opacity:1,y:0}:{}} transition={{ duration:0.55 }} style={{ marginBottom:'clamp(2rem, 5vw, 3rem)' }}>
           <p className="sec-num">03 — Experience</p>
           <h2 className="font-display" style={{ fontSize:'clamp(2rem,5vw,3rem)', fontWeight:700, letterSpacing:'-0.035em', color:'#EEEEF2', lineHeight:1.18 }}>
             Professional{' '}
