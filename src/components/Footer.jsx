@@ -7,8 +7,8 @@ const IC = { Code2, Briefcase, Mail };
 export default function Footer() {
   const y = new Date().getFullYear();
   return (
-    <footer style={{ borderTop: '1px solid rgba(255,255,255,0.05)', padding: '2rem 0', background: '#07070B' }}>
-      <div className="wrap" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+    <footer style={{ borderTop: '1px solid rgba(255,255,255,0.05)', padding: '2.5rem 0', background: '#07070B' }}>
+      <div className="wrap footer-wrap">
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           <span className="font-display" style={{ color: '#EEEEF2', fontWeight: 700, fontSize: '0.95rem', letterSpacing: '-0.025em' }}>
             Muhammed <span style={{ color: '#818CF8' }}>Yasin</span> K.
@@ -33,6 +33,24 @@ export default function Footer() {
           })}
         </div>
       </div>
+      
+      <style>{`
+        .footer-wrap {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+        @media (max-width: 640px) {
+          .footer-wrap {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 1.25rem;
+          }
+        }
+      `}</style>
     </footer>
   );
 }

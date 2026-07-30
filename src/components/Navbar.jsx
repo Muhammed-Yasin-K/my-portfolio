@@ -57,7 +57,7 @@ export default function Navbar() {
           </button>
 
           {/* Desktop Navigation Links */}
-          <nav style={{ display: 'flex', alignItems: 'center', gap: 6 }} className="hidden md:flex">
+          <nav style={{ display: 'flex', alignItems: 'center', gap: 6 }} className="desktop-nav">
             {navLinks.map((l) => (
               <button
                 key={l.href}
@@ -79,7 +79,7 @@ export default function Navbar() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <motion.a
               href={`mailto:${personal.email}`}
-              className="btn btn-fill hidden md:inline-flex"
+              className="btn btn-fill hire-btn"
               style={{ padding: '0.45rem 1.125rem', fontSize: '0.875rem', borderRadius: 9 }}
               whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
               Hire Me <ArrowRight size={14} />
@@ -87,7 +87,7 @@ export default function Navbar() {
             <button
               onClick={() => setOpen(!open)}
               aria-label="Toggle navigation menu"
-              className="md:hidden"
+              className="mobile-menu-btn"
               style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 8, padding: '0.4rem', cursor: 'pointer', color: '#EEEEF2', display: 'flex', alignItems: 'center' }}>
               {open ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -117,6 +117,15 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <style>{`
+        .mobile-menu-btn { display: none !important; }
+        @media (max-width: 768px) {
+          .desktop-nav { display: none !important; }
+          .hire-btn { display: none !important; }
+          .mobile-menu-btn { display: flex !important; }
+        }
+      `}</style>
     </>
   );
 }
