@@ -138,7 +138,7 @@ export default function Hero() {
             {/* Portrait Frame */}
             <div style={{
               position: 'relative', zIndex: 1,
-              width: 'clamp(275px, 25.5vw, 380px)', // Increased size by ~5%
+              width: 'clamp(220px, 65vw, 380px)', // Improved mobile scaling
               aspectRatio: '3/4',
               borderRadius: 24,
               overflow: 'hidden',

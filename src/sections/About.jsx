@@ -48,7 +48,7 @@ export default function About() {
           style={{ display: 'flex', flexWrap: 'wrap', gap: '6rem', alignItems: 'flex-start' }}>
           
           {/* Left Column: Main Content */}
-          <div style={{ flex: '1 1 500px', maxWidth: 800 }}>
+          <div style={{ flex: '1 1 min(100%, 500px)', maxWidth: 800 }}>
             <motion.p variants={itemVariants} className="sec-num" style={{ marginBottom: '2.5rem' }}>01 — ABOUT</motion.p>
             
             <motion.h2 variants={itemVariants} className="font-display" 

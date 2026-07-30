@@ -44,7 +44,7 @@ export default function Achievements() {
             initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1, duration: 0.6 }}
             whileHover={{ y: -8 }}
             style={{ 
-              display: 'flex', flexDirection: 'column', padding: '2.5rem', borderRadius: 24, 
+              display: 'flex', flexDirection: 'column', padding: 'clamp(1.5rem, 5vw, 2.5rem)', borderRadius: 24, 
               background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.06)', backdropFilter: 'blur(16px)', 
               position: 'relative', overflow: 'hidden', transition: 'all 0.35s cubic-bezier(0.4,0,0.2,1)' 
             }}
@@ -104,7 +104,7 @@ export default function Achievements() {
                 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 + (i * 0.1), duration: 0.6 }}
                 whileHover={{ y: -6 }}
                 style={{ 
-                  display: 'flex', flexDirection: 'column', padding: '1.75rem', borderRadius: 24, 
+                  display: 'flex', flexDirection: 'column', padding: 'clamp(1.25rem, 4vw, 1.75rem)', borderRadius: 24, 
                   background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.06)', backdropFilter: 'blur(16px)', 
                   position: 'relative', overflow: 'hidden', transition: 'all 0.3s cubic-bezier(0.4,0,0.2,1)' 
                 }}

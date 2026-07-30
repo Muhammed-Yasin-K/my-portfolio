@@ -43,7 +43,8 @@ body::before {
 @layer utilities {
   .font-display { font-family: 'Space Grotesk', sans-serif; }
   .section-padding { padding: 7rem 0; }
-  .wrap { max-width: 1440px; margin: 0 auto; padding: 0 1.5rem; }
+  .wrap { max-width: 1440px; margin: 0 auto; padding: 0 1rem; }
+  @media (min-width: 640px)  { .wrap { padding: 0 1.5rem; } }
   @media (min-width: 768px)  { .wrap { padding: 0 3rem; } }
   @media (min-width: 1024px) { .wrap { padding: 0 5rem; } }
   @media (min-width: 1280px) { .wrap { padding: 0 6rem; } }

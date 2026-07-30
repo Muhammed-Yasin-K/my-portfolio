@@ -46,7 +46,7 @@ export default function Contact() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', alignItems: 'start' }}>
           {/* CTA card */}
           <motion.div initial={{ opacity: 0, x: -20 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.1, duration: 0.55 }}>
-            <div style={{ padding: '2rem', borderRadius: 20, border: '1px solid rgba(255,255,255,0.07)', background: 'rgba(255,255,255,0.025)', backdropFilter: 'blur(16px)', position: 'relative', overflow: 'hidden' }}>
+            <div style={{ padding: 'clamp(1.25rem, 5vw, 2rem)', borderRadius: 20, border: '1px solid rgba(255,255,255,0.07)', background: 'rgba(255,255,255,0.025)', backdropFilter: 'blur(16px)', position: 'relative', overflow: 'hidden' }}>
               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: 'linear-gradient(90deg,#6366F1,#A78BFA,#06B6D4)' }} />
               
               <div style={{ marginBottom: '1.25rem', marginTop: '0.375rem' }}>

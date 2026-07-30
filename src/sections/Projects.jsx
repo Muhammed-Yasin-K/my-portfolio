@@ -143,7 +143,7 @@ export default function Projects() {
         </motion.div>
 
         {/* Grid for All Projects */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.25rem', marginBottom: '2.5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '1.25rem', marginBottom: '2.5rem' }}>
           {projects.map((p, i) => (
             <ProjectCard key={p.id} project={p} index={i} large={false} onSelect={setSelectedProject} />
           ))}

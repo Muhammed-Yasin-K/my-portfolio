@@ -21,7 +21,7 @@ export default function Experience() {
           <motion.div key={exp.company}
             initial={{ opacity:0, y:24 }} animate={inView?{opacity:1,y:0}:{}} transition={{ delay:i*0.1+0.1, duration:0.55 }}
             whileHover={{ y:-4 }}
-            style={{ padding:'2rem 2.5rem', borderRadius:20, background:'rgba(255,255,255,0.025)', border:'1px solid rgba(255,255,255,0.07)', backdropFilter:'blur(16px)', position:'relative', overflow:'hidden', transition:'all 0.3s cubic-bezier(0.4,0,0.2,1)' }}
+            style={{ padding:'clamp(1.5rem, 5vw, 2.5rem)', borderRadius:20, background:'rgba(255,255,255,0.025)', border:'1px solid rgba(255,255,255,0.07)', backdropFilter:'blur(16px)', position:'relative', overflow:'hidden', transition:'all 0.3s cubic-bezier(0.4,0,0.2,1)' }}
             onMouseEnter={e=>{e.currentTarget.style.borderColor=`${exp.color}40`;e.currentTarget.style.boxShadow=`0 24px 60px rgba(0,0,0,0.5), 0 0 40px ${exp.color}12`;}}
             onMouseLeave={e=>{e.currentTarget.style.borderColor='rgba(255,255,255,0.07)';e.currentTarget.style.boxShadow='none';}}>
             {/* Left accent bar */}
